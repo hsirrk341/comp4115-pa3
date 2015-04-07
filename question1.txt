@@ -1,0 +1,11 @@
+mysql> create function exp(one int, two int) returns int
+    -> return (one * two);
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> select exp(40,50);
++-----------+
+| expo(40,50) |
++-----------+
+|        2000|
++-----------+
+1 row in set (0.01 sec)
